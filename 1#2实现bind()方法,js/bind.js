@@ -30,13 +30,11 @@
         return fBound;
     }
 // }
-global.a = '全局环境'
 var o = {
         a:'局部环境'
 }
 function text() {
     console.log(this.a);
 }
-text()
 var b = text.bind(o);
 b()
